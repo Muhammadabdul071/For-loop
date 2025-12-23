@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="tables"></div>
+
+    <script>
+    
+
+
+
+   let container = document.getElementById("tables");
+
+for (let table = 1; table <= 10; table++) {
+  let heading = document.createElement("h3");
+  heading.textContent = `Table of ${table}`;
+  container.appendChild(heading);
+
+  for (let i = 1; i <= 10; i++) {
+    let p = document.createElement("p");
+    p.textContent = `${table} x ${i} = ${table * i}`;
+    container.appendChild(p);
+  }
+}
+
+
+</script>
+</body>
+</html>
